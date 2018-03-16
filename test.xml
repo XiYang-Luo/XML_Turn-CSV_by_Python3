@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExperimentCollection version="2.1">
+<Experiment>
+<ExperimentAccession>27179</ExperimentAccession>
+<Title>D-score CID Mascot</Title>
+<Reference>
+    <RefLine>Vaudel M, Breiter D, Beck F, Rahnenführer J, Martens L, Zahedi RP. D-score: a search engine independent MD-score. Proteomics. 2013 Jan 11</RefLine>
+    <additional>
+        <cvParam name="23307401" accession="23307401" cvLabel="PubMed"/>
+    </additional>
+</Reference>
+<ShortLabel>D-score CID M</ShortLabel>
+<Protocol>
+    <ProtocolName>LC-MS</ProtocolName>
+    <ProtocolSteps>
+        <StepDescription>
+            <cvParam name="Reduction" accession="PRIDE:0000025" cvLabel="PRIDE"/>
+        </StepDescription>
+        <StepDescription>
+            <cvParam name="Enzyme digestion" accession="PRIDE:0000024" cvLabel="PRIDE"/>
+        </StepDescription>
+        <StepDescription>
+            <cvParam name="Mass spectrometry" accession="PRIDE:0000027" cvLabel="PRIDE"/>
+        </StepDescription>
+    </ProtocolSteps>
+</Protocol>
+<mzData version="1.05" accessionNumber="27179">
+<description>
+    <admin>
+        <sampleName>synthetic phospho peptides - Savitski et al MCP 2010</sampleName>
+        <sampleDescription>
+            <cvParam name="Homo sapiens (Human)" accession="9606" cvLabel="NEWT"/>
+            <cvParam name="synthetic_sequence" accession="SO:0000351" cvLabel="SO"/>
+        </sampleDescription>
+        <contact>
+            <name>Lennart Martens</name>
+            <institution>Computational Omics and Systems Biology Group Department of Medical Protein Research Universiteit Gent - VIB</institution>
+            <contactInfo>lennart.martens@UGent.be</contactInfo>
+        </contact>
+    </admin>
+    <instrument>
+        <instrumentName>LTQ-Orbitrap</instrumentName>
+        <source>
+            <cvParam name="Electrospray Ionization" accession="MS:100007" cvLabel="MS"/>
+        </source>
+        <analyzerList count="1">
+            <analyzer>
+                <cvParam name="LTQ Orbitrap" accession="MS:1000449" cvLabel="MS"/>
+            </analyzer>
+        </analyzerList>
+        <detector>
+            <cvParam name="Electron Multiplier Tube" accession="MS:100011" cvLabel="MS"/>
+        </detector>
+        <additional/>
+    </instrument>
+    <dataProcessing>
+        <software>
+            <name>PeptideShaker</name>
+            <version>0.18.0-beta</version>
+        </software>
+        <processingMethod>
+            <cvParam value="0.5" name="Fragment mass tolerance setting" accession="PRIDE:0000161" cvLabel="PRIDE"/>
+            <cvParam value="10.0" name="Peptide mass tolerance setting" accession="PRIDE:0000078" cvLabel="PRIDE"/>
+            <cvParam value="2" name="Allowed missed cleavages" accession="PRIDE:0000162" cvLabel="PRIDE"/>
+        </processingMethod>
+    </dataProcessing>
+</description>
+<spectrumList count="4883">
+<spectrum id="0">
+    <spectrumDesc>
+        <spectrumSettings>
+            <spectrumInstrument mzRangeStop="783.311" mzRangeStart="138.874" msLevel="2"/>
+        </spectrumSettings>
+        <precursorList count="1">
+            <precursor spectrumRef="0" msLevel="1">
+                <ionSelection>
+                    <cvParam value="2" name="charge state" accession="MS:1000041" cvLabel="MS"/>
+                    <cvParam value="412.76431" name="selected ion m/z" accession="MS:1000744" cvLabel="MS"/>
+                    <cvParam value="1466.28" name="peak intensity" accession="MS:1000042" cvLabel="MS"/>
+                </ionSelection>
+                <activation/>
+            </precursor>
+        </precursorList>
+        <comments>Not identified</comments>
+    </spectrumDesc>
+    <mzArrayBinary>
+        <data length="269" endian="little" precision="64">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</data>
+    </mzArrayBinary>
+    <intenArrayBinary>
+        <data length="269" endian="little" precision="64">4GbxYmGI4D98DixHyEDqP0ImGTkL+wBAc7hWe9gL7D9BguLHmLv0Py5yT1d3rOo/eLMG76vy4T8fotEdxM77PxniWBe3UfE/E0iJXdvb5z9F2PD0SlkZQBYVcTrJVt4/IQTkS6jg6D/2KcdkcX/mP2e5bHTOT+M/XyaKkLod5j+zX3e680TqP2KfAIqRJdk/uAGfH0YI8j87AU2EDU8MQDkM5q+QueQ/0qkrn+V59T9z9Pi9Tf8LQDbIJCNn4f8/rUz4pX5eC0CTqYJRSZ0AQP6arFEPUfo/ZTbIJCMnD0DLhF/q503ePwu1pnnH6QdAr1+wG7at8j+vmXyzzc0EQK2GxD2WPvM/2nIuxVUFHkBRS3MrhFXjP9ttF5rrNPg/662BrRLsAEDSb18HzhkOQOQPBp57TwdAsoAJ3LpbDEDoTUUqjG0DQBk74SU49es/rfpcbcW+DUDluFM6WP/xPyFcAYV6euc/xvmbUIjADkA5tMh2vn8YQLraiv1ldxFAUu3T8ZhRIEBrKovCLgrtP8x6MZQTDRFA7UeKyLCK+T9zY3rCEs8FQJtyhXe5iABA7zhFR3I5EkByp3Sw/s8FQOf7qfHSTSVAyxDHurjNJkB3u16aIsDYP0G8rl+wexlAdEaU9gZfDEAMyF7v/jgXQL7Z5sb0hA9ATODW3TxVAEAQO1PovMbyPzFCeLRxxPQ//7J78rDQEkAfgNQmTu7hP3wPlxx3Sh9AWHOAYI7eC0BKQbeXNIYPQBb7y+7J4xJAQGoTJ/f7EEAuA85SspzpP11txf6ye/c/sCDNWDTNIECS6GUUy+0JQB5QNuUK7/w/7fXuj/dqDEDf+NozSwIXQLbbLjTXaQdA2ubG9IRFEUB6Nqs+V1sDQC4cCMkCpvI/EHo2qz43LUAbL90kBmEkQCBB8WPMvS5ACyk/qfZpD0AwuycPC5UkQIVf6udN5RxAr84xIHudFkBBfcucLgsEQHnpJjEIbAtA4lgXt9FgKkBpb/CFyZQ1QNc07zhFx/Q/nWhXIeWnA0BnfjUHCGb1Pyno9pLG6A5Anl4pyxCHHEB/9iNFZBgZQPphhPBowxxA9+RhodbULkB3LSEf9CwrQJet9UVCyyFAJCh+jLkrBUCsOUAwR88LQKwcWmQ7XxhALGUZ4lhXJ0D7XG3F/nI1QOxph78max1AU1xV9l0RCkBbQj7o2awrQNSa5h2naDFA/7J78rDATkArhxbZzp9aQD7o2az67D1ArIvbaAB/NUCUMNP2r8wVQH2zzY3pyQlAdlQ1QdT9GkBvgQTFjzEqQGlXIeUnBSFAarx0kxiECkDV0AZgAyLsP5rOTgZH6RRAjzaOWIvP9j9BguLHmBs5QD/G3LWE3DpAIEHxY8ytMUC7uI0G8H5BQPvL7snDwjRA2V92Tx5WJEBWfa62Yv/+PxpR2ht8YfM/2nIuxVVl8z8XnwJgPEMSQEGC4seYOyxAiUFg5dA+ZkAK16NwPX5jQPJBz2bV21JA1QloImysVkDCFyZTBeM8QD55WKg1DSVAsp3vp8ZLO0BVwaikTjAwQCBB8WPMnSdAJ8KGp1dKCUDOiNLe4CsnQIEhq1s9J8s/OZfiqrIPG0BR2ht8YXIlQN7lIr4TMyJAoBov3SQ6Z0AIrBxaZE9iQMcpOpLLf1ZA2T15WKhVU0CQMXctIV8/QFInoImwkUpAejarPldbPkDLLa2GxN0hQGiz6nO1dSRAAiuHFtleNkATSfQyinUiQOXyH9JvXy5As7W+SGhLCEBJERlW8YYMQMxdS8gHHS1AMEymCkYFN0C28/3UeP1TQHctIR/0bEBAwaikTkBjSEAKaCJseLo1QBb7y+7JoyRAB3x+GCH8AkA+6Nms+uxQQIzbaABvKVZA9bnaiv2VQED4wmSqYARPQClcj8L1AGBAklz+Q/pdTkAK16NwPcZwQBfZzvdTM29Afoy5awl5NkDl0CLb+aJYQJyiI7n8I1NArIvbaAAvRUBDrWnecVo0QIZVvJF5BCNA8tJNYhDAWkCBlUOLbIdhQO58PzVe2llAeH+8V60sI0C71XPS+yYjQK1p3nGKjiBAgLdAguKHFUA82jhiLb4NQAn5oGezaiVAC7WmeccJLUBYqDXNO/5XQDy9UpYh3jJAgJ9x4UBoIUBdUN8yp0v1P7L1DOGY5eg/R1oqb0d4H0CX/5B++1oaQLSwpx3+mgNAOBPThVj91T9SflLt0/EPQNhHp658NhhAr1qZ8Ev99D9pVyHlJzUdQB3mywuwzwRAKCuGqwOg5z9T6LzGLhELQIC1ateENOI/GjIepRKe6z87qpog6n4AQAGHUKVmjwlAJegv9IhR4z/K3ef4aHHnPyxlGeJYF/g/yTocXaW72D/0pExqaIPgP5yopbkVwtg/ho+IKZFE/T+DNGPRdPb9PwspP6n2KQVAbkxPWOIB+T+NnIU97fAIQFDkSdI1E+0/EK/rF+wGAkCUh4Va0zz6PwGmDBzQ0uQ/a9RDNLrDB0C8QbRWtDnmP1/v/nivOhJAcxB0tKql5D9pxqLp7OT/P6qaIOo+API/EOoihbJw7j9RoE/kSdL0P7SvPEhPEeU/uqP/5Vq05D8jEK/rF+z2P96q61BNyeg/7N0f71UrBUDDu1zEdyIFQH/eVKTC2AJA2NMOf03W/z825QrvcpEHQL6kMVpHlQhAz9ptF5pr7j+KyLCKN7LwP2dF1ESfj+A/odtLGqM1CkC9UpYhjnX1P4o8Sbpmcvo/Obh0zHlG4z/vIHam0DkHQP4ORYE+kfw/A7LXuz8+GECaQuc1don1P9EF9S1zugtAICQLmMCt+z/+SBEZVnEDQMHicOZXswBAoUj3cwry7D+LGeHtQQjpPw==</data>
+    </intenArrayBinary>
+</spectrum>
+<spectrum id="1">
+    <spectrumDesc>
+        <spectrumSettings>
+            <spectrumInstrument mzRangeStop="788.794" mzRangeStart="119.204" msLevel="2"/>
+        </spectrumSettings>
+        <precursorList count="1">
+            <precursor spectrumRef="0" msLevel="1">
+                <ionSelection>
+                    <cvParam value="2" name="charge state" accession="MS:1000041" cvLabel="MS"/>
+                    <cvParam value="412.76407" name="selected ion m/z" accession="MS:1000744" cvLabel="MS"/>
+                    <cvParam value="1479.087" name="peak intensity" accession="MS:1000042" cvLabel="MS"/>
+                </ionSelection>
+                <activation/>
+            </precursor>
+        </precursorList>
+        <comments>Not identified</comments>
+    </spectrumDesc>
+    <mzArrayBinary>
+        <data length="259" endian="little" precision="64">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</data>
+    </mzArrayBinary>
+    <intenArrayBinary>
+        <data length="259" endian="little" precision="64">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</data>
+    </intenArrayBinary>
+</spectrum>
+</spectrumList>
+</mzData>
+<GelFreeIdentification>
+    <Accession>Q13822</Accession>
+    <Database>UniProt</Database>
+    <PeptideItem>
+        <Sequence>WVEELMKMHTAR</Sequence>
+        <Start>815</Start>
+        <End>826</End>
+        <SpectrumReference>178</SpectrumReference>
+        <ModificationItem>
+            <ModLocation>8</ModLocation>
+            <ModAccession>MOD:01047</ModAccession>
+            <ModDatabase>MOD</ModDatabase>
+            <ModMonoDelta>15.9949150000</ModMonoDelta>
+            <additional>
+                <cvParam value="15.994915" name="monohydroxylated lysine" accession="MOD:01047" cvLabel="MOD"/>
+            </additional>
+        </ModificationItem>
+        <FragmentIon>
+            <cvParam value="483.8670000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="1297.8800000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.3956711268" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="466.5420000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="11.5825000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -H2O" accession="PRIDE:0000197" cvLabel="PRIDE"/>
+            <cvParam value="0.2898935332" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="449.4100000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="19.0336000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion -H2O" accession="PRIDE:0000196" cvLabel="PRIDE"/>
+            <cvParam value="-0.3216341368" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="502.2080000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="112.7600000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.0544512968" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="493.6880000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="29.7860000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -NH3" accession="PRIDE:0000198" cvLabel="PRIDE"/>
+            <cvParam value="-0.0611767518" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="493.6880000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="29.7860000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -H2O" accession="PRIDE:0000197" cvLabel="PRIDE"/>
+            <cvParam value="0.4308310332" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="566.3320000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="9.7942800000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.4534512968" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="623.2650000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="10.3010000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -NH3" accession="PRIDE:0000198" cvLabel="PRIDE"/>
+            <cvParam value="0.4698232482" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="687.3040000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="12.1634000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion" accession="PRIDE:0000194" cvLabel="PRIDE"/>
+            <cvParam value="0.4775210332" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="515.9690000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="14.0671000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="precursor ion" accession="PRIDE:0000263" cvLabel="PRIDE"/>
+            <cvParam value="0.0476353232" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="3" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="510.1160000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="11.3762000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="precursor ion -NH3" accession="PRIDE:0000261" cvLabel="PRIDE"/>
+            <cvParam value="-0.1298483135" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="3" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="510.1160000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="11.3762000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="precursor ion -H2O" accession="PRIDE:0000262" cvLabel="PRIDE"/>
+            <cvParam value="0.1981568765" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="3" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <additional>
+            <userParam value="ppeptidemix5_CID_Orbi.mgf" name="Spectrum File"/>
+            <userParam value="File5417 Spectrum179 scans: 1032" name="Spectrum Title"/>
+            <userParam value="Q13822" name="Protein inference"/>
+            <userParam value="0.0" name="Peptide Confidence"/>
+            <userParam value="98.0" name="Peptide Confidence Threshold"/>
+            <userParam value="No" name="Peptide Validation"/>
+            <userParam value="0.0" name="PSM Confidence"/>
+            <userParam value="93.65" name="PSM Confidence Threshold"/>
+            <userParam value="No" name="PSM Validation"/>
+            <userParam value="3+" name="Identified Charge"/>
+            <userParam value="19.02015373764351" name="Mascot e-value"/>
+            <userParam value="3.43" name="Mascot score"/>
+            <userParam value="" name="PTM A-score"/>
+        </additional>
+    </PeptideItem>
+    <PeptideItem>
+        <Sequence>WVEELMKMHTAR</Sequence>
+        <Start>815</Start>
+        <End>826</End>
+        <SpectrumReference>173</SpectrumReference>
+        <ModificationItem>
+            <ModLocation>6</ModLocation>
+            <ModAccession>MOD:01047</ModAccession>
+            <ModDatabase>MOD</ModDatabase>
+            <ModMonoDelta>15.9949150000</ModMonoDelta>
+            <additional>
+                <cvParam value="15.994915" name="monohydroxylated lysine" accession="MOD:01047" cvLabel="MOD"/>
+            </additional>
+        </ModificationItem>
+        <FragmentIon>
+            <cvParam value="483.8080000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="1740.9500000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.4546711268" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="466.4130000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="23.8527000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -H2O" accession="PRIDE:0000197" cvLabel="PRIDE"/>
+            <cvParam value="0.1608935332" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="614.8190000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="23.2811000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.4841711268" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="596.9610000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="19.3828000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -H2O" accession="PRIDE:0000197" cvLabel="PRIDE"/>
+            <cvParam value="-0.3316064668" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="393.6970000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="20.6517000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion -H2O" accession="PRIDE:0000196" cvLabel="PRIDE"/>
+            <cvParam value="0.0153933632" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="466.4130000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="23.8527000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion" accession="PRIDE:0000194" cvLabel="PRIDE"/>
+            <cvParam value="-0.3213739668" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="458.0350000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="36.2873000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion -NH3" accession="PRIDE:0000195" cvLabel="PRIDE"/>
+            <cvParam value="-0.1860994218" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="458.0350000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="36.2873000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion -H2O" accession="PRIDE:0000196" cvLabel="PRIDE"/>
+            <cvParam value="0.3059083632" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="445.3480000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="17.1034000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.3724162968" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="502.1830000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="42.6674000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.0794512968" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="493.4840000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="81.5719000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -NH3" accession="PRIDE:0000198" cvLabel="PRIDE"/>
+            <cvParam value="-0.2651767518" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="493.4840000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="81.5719000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -H2O" accession="PRIDE:0000197" cvLabel="PRIDE"/>
+            <cvParam value="0.2268310332" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="686.7660000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="21.1908000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion" accession="PRIDE:0000194" cvLabel="PRIDE"/>
+            <cvParam value="-0.0604789668" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="515.8240000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="20.5667000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="precursor ion" accession="PRIDE:0000263" cvLabel="PRIDE"/>
+            <cvParam value="-0.0973646768" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="3" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="509.9260000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="20.2207000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="precursor ion -NH3" accession="PRIDE:0000261" cvLabel="PRIDE"/>
+            <cvParam value="-0.3198483135" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="3" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="509.9260000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="20.2207000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="precursor ion -H2O" accession="PRIDE:0000262" cvLabel="PRIDE"/>
+            <cvParam value="0.0081568765" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="3" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <additional>
+            <userParam value="ppeptidemix5_CID_Orbi.mgf" name="Spectrum File"/>
+            <userParam value="File5417 Spectrum174 scans: 1025" name="Spectrum Title"/>
+            <userParam value="Q13822" name="Protein inference"/>
+            <userParam value="0.0" name="Peptide Confidence"/>
+            <userParam value="98.0" name="Peptide Confidence Threshold"/>
+            <userParam value="No" name="Peptide Validation"/>
+            <userParam value="41.27" name="PSM Confidence"/>
+            <userParam value="93.65" name="PSM Confidence Threshold"/>
+            <userParam value="No" name="PSM Validation"/>
+            <userParam value="3+" name="Identified Charge"/>
+            <userParam value="5.348278608919528" name="Mascot e-value"/>
+            <userParam value="8.94" name="Mascot score"/>
+            <userParam value="oxidation of m (6: 41.269841269841265)" name="PTM D-score"/>
+            <userParam value="oxidation of m (6: 26.967599493284414)" name="PTM A-score"/>
+        </additional>
+    </PeptideItem>
+	<additional>
+        <userParam value="1" name="Decoy"/>
+        <userParam value="0.0" name="NSAF+"/>
+        <userParam value="No" name="Protein Validation"/>
+    </additional>
+    <Score>7.49</Score>
+    <Threshold>100.0</Threshold>
+    <SearchEngine>Mascot post-processed by PeptideShaker v0.18.0-beta</SearchEngine>
+    <SequenceCoverage>0.0</SequenceCoverage>
+</GelFreeIdentification>
+<GelFreeIdentification>
+    <Accession>O14920</Accession>
+    <Database>UniProt</Database>
+    <PeptideItem>
+        <Sequence>AAMMNLLRNNSCLSK</Sequence>
+        <Start>453</Start>
+        <End>467</End>
+        <SpectrumReference>3759</SpectrumReference>
+        <ModificationItem>
+            <ModLocation>4</ModLocation>
+            <ModAccession>MOD:01047</ModAccession>
+            <ModDatabase>MOD</ModDatabase>
+            <ModMonoDelta>15.9949150000</ModMonoDelta>
+            <additional>
+                <cvParam value="15.994915" name="monohydroxylated lysine" accession="MOD:01047" cvLabel="MOD"/>
+            </additional>
+        </ModificationItem>
+        <ModificationItem>
+            <ModLocation>12</ModLocation>
+            <ModAccession>MOD:01090</ModAccession>
+            <ModDatabase>MOD</ModDatabase>
+            <ModMonoDelta>57.0214640000</ModMonoDelta>
+            <additional>
+                <cvParam value="57.021464" name="iodoacetamide derivatized amino-terminal residue" accession="MOD:01090" cvLabel="MOD"/>
+            </additional>
+        </ModificationItem>
+        <FragmentIon>
+            <cvParam value="347.0790000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="15.3162000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.1499111268" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="535.0210000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="52.4438000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion" accession="PRIDE:0000194" cvLabel="PRIDE"/>
+            <cvParam value="-0.1793614668" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="518.3720000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="23.7501000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion -NH3" accession="PRIDE:0000195" cvLabel="PRIDE"/>
+            <cvParam value="0.1981876232" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="648.3490000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="15.8369000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion" accession="PRIDE:0000194" cvLabel="PRIDE"/>
+            <cvParam value="0.0645685332" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="1" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="354.3870000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="30.6494000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.2839007968" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="450.4570000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="18.2333000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion -NH3" accession="PRIDE:0000195" cvLabel="PRIDE"/>
+            <cvParam value="-0.2681744218" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="490.1570000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="31.5996000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="0.4140742032" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="516.2950000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="20.6903000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion" accession="PRIDE:0000194" cvLabel="PRIDE"/>
+            <cvParam value="0.0350860332" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="546.1380000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="75.7976000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion" accession="PRIDE:0000193" cvLabel="PRIDE"/>
+            <cvParam value="-0.1469607968" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="564.2690000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="244.8230000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion -NH3" accession="PRIDE:0000195" cvLabel="PRIDE"/>
+            <cvParam value="-0.4991044218" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="650.8020000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="23.4512000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="y ion -H2O" accession="PRIDE:0000197" cvLabel="PRIDE"/>
+            <cvParam value="-0.0411784668" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <FragmentIon>
+            <cvParam value="796.6280000000" name="product ion m/z" accession="PRIDE:0000188" cvLabel="PRIDE"/>
+            <cvParam value="44.0766000000" name="product ion intensity" accession="PRIDE:0000189" cvLabel="PRIDE"/>
+            <cvParam name="b ion" accession="PRIDE:0000194" cvLabel="PRIDE"/>
+            <cvParam value="-0.2427709668" name="product ion mass error" accession="PRIDE:0000190" cvLabel="PRIDE"/>
+            <cvParam value="2" name="product ion charge" accession="PRIDE:0000204" cvLabel="PRIDE"/>
+        </FragmentIon>
+        <additional>
+            <userParam value="ppeptidemix4_CID_Orbi.mgf" name="Spectrum File"/>
+            <userParam value="File5415 Spectrum564 scans: 1455" name="Spectrum Title"/>
+            <userParam value="O14920" name="Protein inference"/>
+            <userParam value="0.0" name="Peptide Confidence"/>
+            <userParam value="98.0" name="Peptide Confidence Threshold"/>
+            <userParam value="No" name="Peptide Validation"/>
+            <userParam value="0.0" name="PSM Confidence"/>
+            <userParam value="93.65" name="PSM Confidence Threshold"/>
+            <userParam value="No" name="PSM Validation"/>
+            <userParam value="3+" name="Identified Charge"/>
+            <userParam value="24.73921510116404" name="Mascot e-value"/>
+            <userParam value="2.75" name="Mascot score"/>
+            <userParam value="oxidation of m (4: 0.0)" name="PTM D-score"/>
+            <userParam value="oxidation of m (3: 6.825543377346384)" name="PTM A-score"/>
+        </additional>
+    </PeptideItem>
+    <additional>
+        <userParam value="0" name="Decoy"/>
+        <userParam value="0.0" name="NSAF+"/>
+        <userParam value="No" name="Protein Validation"/>
+    </additional>
+    <Score>7.49</Score>
+    <Threshold>100.0</Threshold>
+    <SearchEngine>Mascot post-processed by PeptideShaker v0.18.0-beta</SearchEngine>
+    <SequenceCoverage>0.0</SequenceCoverage>
+</GelFreeIdentification>
+<additional>
+    <cvParam value="PeptideShaker v0.18.0-beta" name="XML generation software" accession="PRIDE:0000175" cvLabel="PRIDE"/>
+    <cvParam value="PTM scores" name="Project" accession="PRIDE:0000097" cvLabel="PRIDE"/>
+    <cvParam value="Synthetic phosphorylated peptides from Savitski et al. (MCP 2011, available from the Tranche data repository under the project name: Mascot Delta score; https://proteomecommons.org/tranche/) measured with CID fragmentation identified with Mascot." name="Experiment description" accession="PRIDE:0000040" cvLabel="PRIDE"/>
+    <cvParam name="ms-ms search" accession="MS:1001083" cvLabel="MS"/>
+    <cvParam value="D-score" name="Project" accession="PRIDE:0000097" cvLabel="PRIDE"/>
+    <cvParam value="Processing of the dataset of synthetic phosphopeptides by Savitzki et al. (MCP, 2011) using multiple search engines. Establishment of the D-score: a search engine independent MD-score." name="Experiment description" accession="PRIDE:0000040" cvLabel="PRIDE"/>
+    <cvParam value="phosphorylation, synthetic peptides, localization score" name="submitter keyword" accession="MS:1001925" cvLabel="MS"/>
+    <cvParam value="PXD000021" name="ProteomeXchange accession number" accession="MS:1001919" cvLabel="MS"/>
+    <cvParam value="10.6019/PXD000021" name="Digital Object Identifier (DOI)" accession="MS:1001922" cvLabel="MS"/>
+    <cvParam value="http://central.proteomexchange.org/dataset/27179" name="ProteomeCentral dataset URI" accession="PRIDE:0000406" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021" name="Dataset FTP location" accession="PRIDE:0000411" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/ppeptidemix2_CID_Orbi.RAW" name="Associated raw file URI" accession="PRIDE:0000404" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/ppeptidemix4_CID_Orbi.RAW" name="Associated raw file URI" accession="PRIDE:0000404" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/ppeptidemix5_CID_Orbi.RAW" name="Associated raw file URI" accession="PRIDE:0000404" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/ppeptidemix2_CID_Orbi.mgf" name="Peak list file URI" accession="PRIDE:0000409" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/ppeptidemix4_CID_Orbi.mgf" name="Peak list file URI" accession="PRIDE:0000409" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/ppeptidemix5_CID_Orbi.mgf" name="Peak list file URI" accession="PRIDE:0000409" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/F049343.dat" name="Search engine output file URI" accession="PRIDE:0000408" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/F049346.dat" name="Search engine output file URI" accession="PRIDE:0000408" cvLabel="PRIDE"/>
+    <cvParam value="ftp://ftp.pride.ebi.ac.uk/2013/01/PXD000021/F049350.dat" name="Search engine output file URI" accession="PRIDE:0000408" cvLabel="PRIDE"/>
+</additional>
+</Experiment>
+</ExperimentCollection>
+
